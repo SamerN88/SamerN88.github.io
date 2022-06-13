@@ -56,16 +56,17 @@ window.addEventListener('DOMContentLoaded', event => {
 
     // Close menu if user taps outside
     const menu = document.getElementById('navbarResponsive');
+    // const navLinks = document.getElementsByClassName('nav-link');
     function menuIsOpen() {
         return getComputedStyle(menu).display !== 'none';
     }
     window.addEventListener('click', (event) => {
-        if ((event.target != menu) && menuIsOpen()) {
+        if ((!responsiveNavItems.includes(event.target)) && menuIsOpen()) {
             navbarToggler.click();
         }
     });
     window.addEventListener('touchstart', (event) => {
-        if ((event.target != menu) && menuIsOpen()) {
+        if ((!responsiveNavItems.includes(event.target)) && menuIsOpen()) {
             navbarToggler.click();
         }
     });
