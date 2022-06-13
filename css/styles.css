@@ -4106,6 +4106,9 @@ textarea.form-control-lg {
     display: inline-block;
     vertical-align: middle;
   }
+  #navbarResponsive {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+  }
 }
 
 
