@@ -15,7 +15,10 @@ window.addEventListener('DOMContentLoaded', event => {
         if (!navbarCollapsible) {
             return;
         }
-        if (window.scrollY < 713) {  // when the About section starts
+
+        const masthead = document.getElementsByClassName('masthead')[0]
+        let startOfAboutSection = parseInt(getComputedStyle(masthead).height);
+        if (window.scrollY < startOfAboutSection) {  // when the About section starts
             navbarCollapsible.classList.remove('navbar-shrink')
         } else {
             navbarCollapsible.classList.add('navbar-shrink')

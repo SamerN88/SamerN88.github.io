@@ -4109,22 +4109,20 @@ textarea.form-control-lg {
   #navbarResponsive {
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
   }
-}
-
-
-.nav-link[href='#about'] {
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  /* border-bottom: none; */
-}
-/* .nav-link[href='#projects'] {
-  border-top: none;
-  border-bottom: none;
-} */
-.nav-link[href='#signup'] {
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  /* border-top: none; */
+  .nav-link[href='#about'] {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    /* border-bottom: none; */
+  }
+  /* .nav-link[href='#projects'] {
+    border-top: none;
+    border-bottom: none;
+  } */
+  .nav-link[href='#signup'] {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    /* border-top: none; */
+  }
 }
 @media (min-width: 991.98px) {
   .nav-link {
