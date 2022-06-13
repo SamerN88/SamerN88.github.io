@@ -4075,13 +4075,61 @@ textarea.form-control-lg {
   list-style: none;
 }
 
+/* .navbar-toggler-right {
+  margin-right: auto;
+  margin-left: auto;
+} */
+
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: var(--resume-blue-lighter);
+  background-color: var(--resume-blue-LIGHTER);
+  /* border: 1px solid var(--resume-blue-light); */
+  /* border-radius: 1000px; */
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  text-align: center;
+  /* margin-top: 5px;
+  margin-bottom: 5px; */
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
 }
+@media (max-width: 991.98px) {
+  .nav-link {
+    display: block;
+    height: 60px;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+  }
+  .nav-link:before {
+    content: '';
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+
+.nav-link[href='#about'] {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  /* border-bottom: none; */
+}
+/* .nav-link[href='#projects'] {
+  border-top: none;
+  border-bottom: none;
+} */
+.nav-link[href='#signup'] {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  /* border-top: none; */
+}
+@media (min-width: 991.98px) {
+  .nav-link {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
     transition: none;
@@ -4219,7 +4267,7 @@ textarea.form-control-lg {
 }
 
 .navbar-toggler {
-  display: none;
+  /* display: none; */
   /* visibility: hidden; */
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
@@ -11501,12 +11549,13 @@ body {
 #mainNav {
   height: 72px;
   background-color: var(--resume-blue-lighter);
+  backdrop-filter: blur(8px);
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: var(--resume-blue-lighter);
-  border: 1px solid var(--resume-blue-lighter);
+  color: var(--resume-blue-LIGHTER);
+  border: 1px solid var(--resume-blue-LIGHTER);
 }
 #mainNav .navbar-toggler:focus {
   outline: none;
