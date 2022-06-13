@@ -56,8 +56,16 @@ window.addEventListener('DOMContentLoaded', event => {
 
     // Close menu if user taps outside
     const menu = document.getElementById('navbarResponsive');
+    function menuIsOpen() {
+        return getComputedStyle(menu).display !== 'none';
+    }
     window.addEventListener('click', (event) => {
-        if (event.target != menu) {
+        if ((event.target != menu) && menuIsOpen()) {
+            navbarToggler.click();
+        }
+    });
+    window.addEventListener('touchstart', (event) => {
+        if ((event.target != menu) && menuIsOpen()) {
             navbarToggler.click();
         }
     });
