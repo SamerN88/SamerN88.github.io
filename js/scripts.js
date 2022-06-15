@@ -9,16 +9,20 @@
 
 window.addEventListener('DOMContentLoaded', event => {
 
-    // Navbar shrink function
+    // Navbar shrink function: switch navbar from glass to solid when scroll position reaches About section
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
         if (!navbarCollapsible) {
             return;
         }
 
-        const masthead = document.getElementsByClassName('masthead')[0]
+        const masthead = document.getElementsByClassName('masthead')[0];
+        const navbar = document.getElementById('mainNav');
+
         let startOfAboutSection = parseInt(getComputedStyle(masthead).height);
-        if (window.scrollY < startOfAboutSection) {  // when the About section starts
+        let navbarHeight = parseInt(getComputedStyle(navbar).height);
+        
+        if (window.scrollY < startOfAboutSection - navbarHeight) {  // when the About section starts
             navbarCollapsible.classList.remove('navbar-shrink')
         } else {
             navbarCollapsible.classList.add('navbar-shrink')
@@ -56,7 +60,6 @@ window.addEventListener('DOMContentLoaded', event => {
 
     // Close menu if user taps outside
     const menu = document.getElementById('navbarResponsive');
-    // const navLinks = document.getElementsByClassName('nav-link');
     function menuIsOpen() {
         return getComputedStyle(menu).display !== 'none';
     }

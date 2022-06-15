@@ -11636,7 +11636,7 @@ body {
     color: #fff;
   }
   #mainNav.navbar-shrink {
-    background-color: var(--resume-blue-LIGHTER);
+    background-color: var(--resume-blue-lighter);
     height: 72px
   }
   #mainNav.navbar-shrink .navbar-brand {
@@ -11648,15 +11648,15 @@ body {
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: var(--resume-blue-lighter);
+    color: var(--resume-blue-LIGHTER);
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: var(--resume-blue-lighter);
+    color: var(--resume-blue-LIGHTER);
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: var(--resume-blue-lighter);
+    color: var(--resume-blue-LIGHTER);
     outline: none;
-    border-bottom: 0.25rem solid var(--resume-blue-lighter);
+    border-bottom: 0.25rem solid var(--resume-blue-LIGHTER);
   }
 }
 
