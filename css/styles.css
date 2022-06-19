@@ -11649,6 +11649,7 @@ body {
   }
   #mainNav.navbar-shrink .nav-link:hover {
     color: var(--resume-blue-LIGHTER);
+    opacity: 0.75;
   }
   #mainNav.navbar-shrink .nav-link:active {
     color: var(--resume-blue-LIGHTER);
@@ -11657,6 +11658,7 @@ body {
     color: var(--resume-blue-LIGHTER);
     outline: none;
     border-bottom: 0.25rem solid var(--resume-blue-LIGHTER);
+    opacity: 0.75;
   }
 }
 
