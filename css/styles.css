@@ -11732,7 +11732,7 @@ body {
 .about-section {
   padding-top: 15rem;
   padding-bottom: 5rem;
-  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/code-wallpaper.png");
+  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/Qadisha-Valley.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -11749,6 +11749,7 @@ body {
   border-radius: 10px;
   padding: 25px;
   color: var(--resume-blue-LIGHTER);
+  background-color: rgba(0, 0, 61, 0.0);
   width: 70%;
   display: flex;
   flex-flow: column;
@@ -11784,7 +11785,7 @@ body {
   height: 250px; 
   margin: 50px; 
   /* border: 2px solid var(--resume-blue-light); */
-  box-shadow: 0 0 20px 5px black;
+  box-shadow: 0 0 13px 0px rgba(0,0,0,0.7);
 }
 
 /* .about-section {
